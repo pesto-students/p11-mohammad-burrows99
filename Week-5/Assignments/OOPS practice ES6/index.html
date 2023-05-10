@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Object-Oriented Programming Examples</title>
+  </head>
+  <body>
+    <h1>Object-Oriented Programming Examples</h1>
+    
+    <h2>Section 1 - Inheritance</h2>
+    <script src="inheritence.js"></script>
+    <script>
+      const rideShareCar = new RideShareCar("Toyota", "Prius", 2021, "Blue", 4, true);
+      rideShareCar.drive();
+      console.log("Ride share car is available:", rideShareCar.isAvailable); // true
+    </script>
+    
+    <h2>Section 2 - Polymorphism</h2>
+    <script src="Polymorphism.js"></script>
+    <script>
+        const rectangle = new Rectangle(10, 20);
+        console.log("Rectangle area:", rectangle.calculateArea()); // 200
+        
+        const triangle = new Triangle(10, 20);
+        console.log("Triangle area:", triangle.calculateArea()); // 100
+        
+        const circle = new Circle(10);
+        console.log("Circle area:", circle.calculateArea()); // 314.1592653589793
+    </script>
+    
+    <h2>Section 3 - Abstraction and Encapsulation</h2>
+    <script src="Abstraction and encapsulation.js"></script>
+    <script>
+        const checkingAccount = new CheckingAccount("CA-1234", 1000, "John Doe");
+        checkingAccount.deposit(500);
+        console.log("Checking account balance:", checkingAccount.getBalance()); // 1500
+
+        checkingAccount.withdraw(200);
+        console.log("Checking account balance:", checkingAccount.getBalance()); // 1300
+
+        const savingsAccount = new SavingsAccount("SA-5678", 500, "Jane Doe");
+        savingsAccount.deposit(1000);
+        console.log("Savings account balance:", savingsAccount.getBalance()); // 1500
+
+        savingsAccount.withdraw(2000); // Withdrawal failed. Insufficient balance.
+        console.log("Savings account balance:", savingsAccount.getBalance()); // 1500
+    </script>
+  </body>
+</html>
