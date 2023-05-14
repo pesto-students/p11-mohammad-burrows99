@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</article>
+    <header>
+        <h1 className="appHeading">Restaurant Reviews</h1>
+        <nav>
+            <a href="HomePage.html">Home</a>
+            <a href="AddReviewPage.html">Add Review</a>
+            <a href="AboutPage.html">About</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Add review</h2>
+        <form action="HomePage.html">
+            <div style="margin-bottom: 10px;">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+          
+            <div style="margin-bottom: 10px;">
+              <label for="restaurant">Restaurant:</label>
+              <select id="restaurant" name="restaurant" required>
+                <option value="">Select a restaurant</option>
+                <option value="restaurant1">Restaurant 1</option>
+                <option value="restaurant2">Restaurant 2</option>
+                <option value="restaurant3">Restaurant 3</option>
+              </select>
+            </div>
+          
+            <div style="margin-bottom: 10px;">
+              <label for="date">Date of Visit:</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+          
+            <div style="margin-bottom: 10px;">
+              <label for="rating">Rating (0-10):</label>
+              <input type="number" id="rating" name="rating" min="0" max="10" required>
+            </div>
+          
+            <div style="margin-bottom: 10px;">
+              <label for="details">Details:</label>
+              <textarea id="details" name="details" required></textarea>
+            </div>
+          
+            <div style="margin-bottom: 10px;">
+              <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2022 Restraunt Reviews</p>
+    </footer>
+  </article>
+</body>
+</html>

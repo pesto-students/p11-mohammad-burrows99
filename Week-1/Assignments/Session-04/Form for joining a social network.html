@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* this creates space between all divs */
+        #fullName, #email, #aboutYou, #picture {
+            margin-bottom: 1em;
+        } 
+
+        /* this creates the below alignment */
+        /* email:     input */
+        /* full name: input*/
+        label {
+            display: inline-block;
+            width: 10em;
+        }
+
+        #aboutYou textarea {
+            width: 50%;
+            max-width: 50%;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Join a social network</h1>
+    <form action="submit.php" method="POST"></form>
+        <div id="fullName">
+            <label>Full name:</label>
+            <input type="text" 
+                   required>
+        </div>
+        <div id="email">
+            <label>Email Address:</label>
+            <input type="text" 
+                   required>
+        </div>
+        <div id="aboutYou">
+            <label for="about">About you:</label>
+            <textarea id="about" 
+                      name="about" 
+                      rows="5"></textarea>
+        </div>
+        <div id="picture">
+            <label>Select a file:</label>
+            <input type="file">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
