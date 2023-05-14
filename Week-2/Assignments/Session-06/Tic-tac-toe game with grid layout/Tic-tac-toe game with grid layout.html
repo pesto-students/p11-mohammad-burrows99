@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Tic-Tac-Toe</title> 
+      <!-- <link rel="stylesheet" href="styles.css"> -->
+      <style>
+        body {
+            font-family: Roboto, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .x {
+            color: red;
+        }
+
+        .o {
+            color: blue;
+        }
+        
+        #board {
+            font: 85px arial, sans-serif;
+            margin: 3px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            width:100px;
+            position: absolute;
+            left:40%;
+        }
+
+        #board > div {
+            border: 1px solid LightSkyBlue;
+            text-align: center;
+        }
+
+        .cell {
+            width:100px;
+            height:100px;
+        }
+      </style>
+   </head>
+   <body>
+      <h1>Tic-Tac-Toe</h1>
+        
+      <div id="board">
+         <div class="x cell">X</div>
+         <div class="o cell">O</div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="x cell">X</div>
+         <div class="cell"></div>
+         <div class="o cell">O</div>
+         <div class="cell"></div>
+         <div class="x cell">X</div>
+      </div>
+   </body>
+</html>
